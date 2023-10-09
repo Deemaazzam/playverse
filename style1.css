@@ -1,0 +1,260 @@
+body,
+html {
+    height: calc(200vh+25px);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+.thisPage {
+    padding: 4px;
+    font-weight: bolder;
+    color: #ffffff;
+
+}
+
+.navigation {
+    font-family: 'Roboto Mono', monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: transparent;
+    padding: 10px;
+    z-index: 100;
+    letter-spacing: 2px;
+
+    font-size: 75%;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0 10px;
+}
+
+.me {
+    transition: 600ms;
+}
+
+.me:hover {
+    color: black;
+    animation: bounce 0.3s infinite;
+    background-color: blurred;
+    transform: scale(1.05);
+
+    .navigation a {
+        color: black;
+    }
+}
+
+.navigation a {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+
+#video-container {
+
+    position: relative;
+    width: 100%;
+    /* Subtract the height of the navigation bar */
+    overflow: hidden;
+}
+
+#video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+
+}
+
+.content p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.content h1 {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #ff0000 29%,
+            #132fff 67%,
+            #00ed28 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite;
+    display: inline-block;
+    font-size: 12vw;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+#video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust the overlay color and opacity as needed */
+    z-index: -1;
+}
+
+#below-nav {
+    height: 90%;
+    margin: 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.slide-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 300%;
+    /* Three slides in total */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 1;
+    height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.contente {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.slide:hover .contente {
+    transform: translateX(-50%);
+}
+
+.slide:first-child:hover~.slide-container {
+    transform: translateX(0);
+}
+
+.slide:last-child:hover~.slide-container {
+    transform: translateX(-200%);
+}
+
+#below-nav video {
+    width: 100vw;
+    object-fit: contain;
+    z-index: -1;
+}
+
+
+.animated-text {
+    white-space: nowrap;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    color: lightsteelblue;
+    animation: slideFromLeftToRight 35s linear infinite;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 210vh;
+    transform: translateY(-50%);
+}
+
+@keyframes slideFromLeftToRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.aa {
+    font-size: 3rem;
+    color: transparent;
+    -webkit-background-clip: text;
+    /* Apply background styles to the text */
+    background-clip: text;
+    background-image: linear-gradient(to right, #000000b0, #00000053, #00000046, #3c3c3c5d, #ffffff6d, #ffffff7d, #ffffff86);
+    /* Gradient colors for the border */
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.075);
+    
+    top: 150vh;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+
+}
+
+.lolp {
+    color:rgba(255, 255, 255, 0.42);
+    font-weight:bold;
+    font-size: 25px;
+    display: flex;
+    position: absolute;
+    top: 170vh;
+    left: 45vw;    
+    width: 120px;
+    height: 40px;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.063),rgba(0, 0, 0, 0.057),rgba(0, 0, 0, 0.171));
+    justify-content: center;
+    text-align: center;
+    border:4px solid rgba(255, 255, 255, 0.316);
+    border-radius: 4px;
+    transition: 0.8s;
+}
+.lolp:hover
+{
+    cursor: crosshair;
+    scale:110%;
+    color:white;
+    border: none;
+    text-shadow: #00000067 2px 2px 20px;
+}

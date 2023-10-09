@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(148, 148, 49);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    height: 560px;
+    border: solid black;
+    
+
+  
+}
+  
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+.description { 
+    color: white;
+    margin-left:15px;
+    padding: 5px;
+    border: 3px solid black;
+    text-align: center;
+    background-image: url(image.jpg);
+    animation: animate 2.5s linear infinite ;
+  
+   
+  }
+  .description h1 {
+    font-style: italic;
+   }
+
+  .description p { 
+  
+      font-size: 180px;
+     
+      
+  }
+
+  .scoret{
+
+    margin-left: 530px;
+    color: white;
+
+  }
+
+
+  .reset{
+    margin-left: 535px;
+  }
+
+  .reset button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    animation: animate 1.8s linear infinite ;
+
+
+
+  }
+  @keyframes animate{
+
+     0% ,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+    color: black;
+    box-shadow: none;
+   
+     }
+     18%,20%,30%,50.1%,60%,65.1%,80%,90.1%,92%,100%{
+     color: white ;
+     box-shadow: 0 0 10px white,
+     0 0 20px white;
+    
+     }
+    }
+
+
+
+
+.pac-dot {
+    background-color: gray;   
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: white;
+}
+
+
+
+.power-pellet {
+    background-color: rgb(75, 215, 51);
+    border-radius: 10px;
+}
+
+.blinky {
+    background-color: red;
+}
+
+.pinky {
+    background-color: pink;
+}
+
+.inky {
+    background-color: blue;
+}
+
+.clyde {
+    background-color: orange;     
+}
+
+.pac-man {
+ 
+   border-radius: 10px;
+   background: purple;
+  
+   
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+}
+
+.back{
+    position: absolute;
+    top:1%;
+    left:2%;
+    text-decoration: none;
+    cursor: pointer;
+    color:#fff;
+    font-size:20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+  }

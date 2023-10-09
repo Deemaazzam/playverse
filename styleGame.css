@@ -1,0 +1,70 @@
+* {
+    box-sizing:border-box;
+}
+body {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, 
+    rgb(17, 51, 161) 0%, 
+    rgb(136, 34, 195) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    position: absolute;
+    background-color: black;
+    top: 90px;
+}
+.colorBlast span:nth-child(1) {
+    color: aquamarine;
+}
+
+.colorBlast span:nth-child(2) {
+    color: fuchsia;
+}
+
+.colorBlast span:nth-child(3) {
+    color: lawngreen;
+}
+
+.colorBlast span:nth-child(4) {
+    color: yellow;
+}
+
+.colorBlast span:nth-child(5) {
+    color: orange;
+}
+
+.colorBlast span:nth-child(6) {
+    color: darkturquoise;
+}
+
+.colorBlast span:nth-child(7) {
+    color: pink;
+}
+
+.colorBlast span:nth-child(8) {
+    color: cyan;
+}
+
+.colorBlast span:nth-child(9) {
+    color: lightblue;
+}
+
+.colorBlast span:nth-child(10) {
+    color: lightgreen;
+}
+
+.colorBlast {
+    font: bold 32px cursive;
+    word-spacing: 0px;
+}
+p{
+    position:absolute;
+    top: 630px;
+    font: bold 18px cursive ;
+    color: white;
+}

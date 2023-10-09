@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(218,180,40);
+}
+.video-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.Name {
+  width: auto;
+  height: auto;
+  margin-bottom: 3px;
+  position: relative;
+  background-color: rgb(0, 140, 98);
+  border: 3px solid white;
+  color: rgb(218,180,40);
+  border-radius: 5px;
+  font-family: fantasy;
+  font-size: 5vh;
+  opacity: 1;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  z-index: 1;
+}
+
+#cont1 {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#board {
+  background-color: yello;
+  border: 3px solid white;
+  justify-content: center;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+#Time {
+  border-radius: 5px;
+  border: 3px solid black;
+  margin-top: 3px;
+  font-size: larger;
+  font-family: "Gill Sans", "Gill Sans MT" "Trebuchet MS", sans-serif;
+  background-color: rgb(0, 140, 98);
+  color: rgb(218,180,40);
+  font-size: 25px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+#reset {
+  width: 70px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 30px;
+  background-color: black;
+  font-family: monospace;
+  cursor: pointer;
+  margin-top: 3px;
+  color: beige;
+  background-color:  black;
+  opacity: 0.9;
+  animation: animate 2s linear infinite;
+}
+
+#info {
+  width: 70px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 30px;
+  background-color: black;
+  font-family: monospace;
+  cursor: pointer;
+  margin-top: 3px;
+  color: beige;
+  background-color:  black;
+  opacity: 0.9;
+  animation: animate 2s linear infinite;
+}
+
+button {
+  cursor: pointer;
+}
+
+.but {
+  width: 50px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: black;
+  font-family: monospace;
+  cursor: pointer;
+  margin-top: 3px;
+  color: white;
+  margin: 4px;
+  opacity: 0.8;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: black;
+    box-shadow: none;
+  }
+  18%,
+  20%,
+  30%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92%,
+  100% {
+    color: white;
+    box-shadow: 0 0 10px white, 0 0 20px white;
+  }
+}
+
+#padd1-up {
+  background-color: rgb(0, 44, 44);
+}
+
+#padd1-down {
+  background-color: rgb(0, 44, 44);
+}
+
+#padd2-up {
+  background-color: rgb(12, 85, 134);
+}
+
+#padd2-down {
+  background-color: rgb(12, 85, 134);
+}
+
+/* #video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.back{
+  position: absolute;
+  top:1%;
+  left:2%;
+  text-decoration: none;
+  cursor: pointer;
+  color:#fff;
+  font-size:20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+}

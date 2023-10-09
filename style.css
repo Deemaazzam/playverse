@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+#myCanvas{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    max-height:100%;
+    max-width:100%;
+    background-color: black;
+    border:rgb(155, 210, 135) solid 3px;
+}
+#startBtn{
+    position: absolute;
+    left:50%;
+    top:87%;
+    transform:translate(-50%,-87%);
+    background:none;
+    border:none;
+    font-size:28px;
+    font-family:'Press start 2P';
+    color:white;
+   cursor: pointer;
+}
+#startBtn:hover{
+    color:rgb(17, 67, 17);
+}
+#spaceInvader{
+    position:absolute;
+    left:50%;
+    top:37%;
+    transform:translate(-50%,-37%);
+    font-size:100px;
+    z-index:10;
+    text-transform: uppercase;
+    color: #fff;
+    font-family:'Bebas Neue', sans-serif;
+     /* transform: perspective(1000px) rotateX(-50deg); */
+     text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 0 #333, /* Darker shadow at bottom-right */
+     2px 2px 0 #8cb44b,
+     3px 3px 0 #c0e5b7,
+     4px 4px 0 #96d393,
+     5px 5px 0 #fff, /* Lighter shadow at top-left */
+     6px 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+.back{
+    position: absolute;
+    top:6%;
+    left:6%;
+    text-decoration: none;
+    cursor: pointer;
+    color:#fff;
+    font-size:20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    z-index:10;
+  }
