@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styleGAME-1.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pong Game</title>
+  </head>
+
+  <body>
+      <!-- <div class="video-container">
+        <video autoplay loop muted id="video-bg">
+          <source src="animated vid.mp4" type="video/mp4" />
+        </video>
+      </div> -->
+
+      <div class="container">
+        <a href="gameloby.html" class="back">
+          <ion-icon name="arrow-back"></ion-icon>
+          Back</a>
+        <p class="Name">PING PONG Game</p>
+
+        <div class="paddle-controls">
+
+          <div id="cont1">
+            <canvas id="board" width="500" height="500"></canvas>
+          </div>
+
+          <div id="Time">
+            <p> Time: 00:00:00</p>
+          </div>
+
+          <div class="padd-button-container">
+              <button id="padd1-up" class="but">Up</button>
+              <button id="padd1-down" class="but">Down</button>
+              <button id="reset">Reset</button>
+              <button id="padd2-up" class="but">Up</button>
+              <button id="padd2-down" class="but">Down</button>
+          </divdiv>
+          
+          </div>
+
+          <div id="cont2">
+            <button id="info" >Info</button>
+          </div>
+
+        </div>
+    </div>
+
+    <script src="scriptGame-1.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  </body>
+</html>

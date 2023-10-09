@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style4.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="game">
+      <div class="flex">
+        <a href="gameloby.html" class="back">
+          <ion-icon name="arrow-back"></ion-icon>
+          Back</a>
+      <div class="container">
+        <h1 class="title">Minesweeper</h1>
+        <div class="top">
+          <div class="flag-box">
+            <h1>0<span id="flags-left"></span></h1>
+          </div>
+          <button class="emoji-btn"><h1>🙂</h1></button>
+          <div class="timer-box">
+            <h1><span id="timer">0</span></h1>
+          </div>
+        </div>
+
+        <div>
+          <div class="grid"></div>
+        </div>
+        
+        <div id="result"></div>
+      </div>
+
+      <div class="info">
+        <h1 class="title1">About THE Game</h1>
+        <p> Minesweeper game is played by one player, it is about a gum field and the player has to move in this field (pressing on the blocks), if the block shows a number, the number is about how many bombs beside this block, if the block shows a bomb then player lose.Black blocks are safety and not needed to be pressed.The player wins when he opens all blocks and place the bombs with flags by right click. The number of bombs is as the number of flagfs which is 7. <br> To Restart The game press on the emoji face that is beside the time on the right and the flag's number on the left. </p>
+      </div>
+    </div>
+
+    <script src="script4.js"></script>
+    <script
+type="module"
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+  </body>
+</html>
